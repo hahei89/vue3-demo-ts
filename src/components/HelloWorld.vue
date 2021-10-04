@@ -15,13 +15,13 @@ type DState = {
 }
 const root = ref(null) // ref(null) 代表templateRef
 onMounted(() => {
-  console.log('xi ', root);
-  
+  console.log('mounted ', root);
 })
 const count = ref(0)
 const state: DState = reactive({ count: 0, double: computed(() => state.count + 2) })
 function increment () {
-  state.count++,
+  state.count++
+  console.log('count ', count.value + 1)
   console.log('count ', count)
 }
 </script>
