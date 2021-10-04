@@ -1,40 +1,35 @@
-<script setup lang="ts">
-import css from '../assets/index.css'
-import { ref, onMounted } from 'vue'
-const color = "red"
-const font = {
-  size: '12px'
-}
-defineProps({
-  msg: String
-})
-
-const count = ref(0)
-onMounted: {
-  console.log('on Mounted')
-}
-
-</script>
-
 <template>
-  <h1 class="text">{{ msg }}</h1>
-
-  <button type="button" @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <button @click="increment">增加</button>
+  <div>默认的count: {{ state.count }}</div>
+  <input type="text" name="" id="" ref="root" value="使用ref例子">
 </template>
 
+<script setup lang="ts">
+import { reactive, computed, ref, onMounted } from 'vue'
+defineProps({
+  msg: String 
+})
+type DState = {
+  count: number,
+  double: number
+}
+const root = ref(null) // ref(null) 代表templateRef
+onMounted(() => {
+  console.log('xi ', root);
+  
+})
+const count = ref(0)
+const state: DState = reactive({ count: 0, double: computed(() => state.count + 2) })
+function increment () {
+  state.count++,
+  console.log('count ', count)
+}
+</script>
 <style scoped>
 :root {
   --varColor: #42b983;
 }
 a {
   color: var(--varColor);
-}
-.text {
-  color: v-bind(color);
-  font-size: v-bind("font.size");
 }
 </style>
