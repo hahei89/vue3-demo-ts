@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import '@mestoness/resetcss/dist/css/resetCss.min.css'
 import router from './router/index.ts'
 import 'ant-design-vue/dist/antd.css'
 import Antd from 'ant-design-vue'
