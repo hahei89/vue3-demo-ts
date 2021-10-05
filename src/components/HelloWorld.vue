@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, computed, ref, onMounted, watch, watchEffect, defineExpose } from 'vue'
+import { reactive, computed, ref, onMounted, watch, watchEffect } from 'vue'
 
 defineProps({
   msg: String
