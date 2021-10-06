@@ -15,8 +15,12 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.16",
     "@vitejs/plugin-vue": "^1.6.0",
     "@vue/compiler-sfc": "^3.2.6",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vite": "^2.5.2"
   }
 }
