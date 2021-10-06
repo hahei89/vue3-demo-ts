@@ -9,6 +9,7 @@
   "dependencies": {
     "@mestoness/resetcss": "^1.0.5",
     "ant-design-vue": "^2.2.8",
+    "less": "^4.1.2",
     "vue": "^3.2.6",
     "vue-router": "4",
     "vuex": "^4.0.2"
