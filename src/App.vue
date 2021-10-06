@@ -8,6 +8,10 @@ console.log('ss', store.state.username)
   <router-view />
 </template>
 
-<style>
-
+<style lang="less">
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>
