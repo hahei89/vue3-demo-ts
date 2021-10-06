@@ -2,7 +2,9 @@ import { createApp } from 'vue'
 import store, { key } from './store/index.ts'
 import router from './router/index.ts'
 import '@mestoness/resetcss/dist/css/resetCss.min.css'
-import 'ant-design-vue/dist/antd.css'
+
+// 自定义主，，覆盖antd默认主题
+import '@/assets/antd-reset.less'
 import Antd from 'ant-design-vue'
 
 import App from './App.vue'
