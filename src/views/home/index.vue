@@ -1,6 +1,6 @@
 <template>
   <a-layout-header  class="border-b-2 border-gray-200 border-solid shadow-sm ring-2">
-    <v-header />
+    <common-header />
   </a-layout-header>
   <a-layout>
     <a-layout-sider>left l sider</a-layout-sider>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import VHeader from '@/components/v-header.vue'
+import CommonHeader from '@/components/common-header.vue'
 </script>
 
 <style>
