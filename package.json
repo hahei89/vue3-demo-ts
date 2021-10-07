@@ -7,11 +7,20 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.6"
+    "@mestoness/resetcss": "^1.0.5",
+    "ant-design-vue": "^2.2.8",
+    "less": "^4.1.2",
+    "vue": "^3.2.6",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.16",
     "@vitejs/plugin-vue": "^1.6.0",
     "@vue/compiler-sfc": "^3.2.6",
+    "autoprefixer": "^9",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vite": "^2.5.2"
   }
 }
