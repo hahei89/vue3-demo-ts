@@ -10,5 +10,4 @@ import '@/assets/antd-reset.less'
 // import '@/assets/index.css'
 
 const app = createApp(App)
-app.config.productionTip = false
 app.use(Antd).use(router).use(store, key).mount('#app')
