@@ -11,7 +11,7 @@
         :placement="placement"
         :getPopupContainer="
         (triggerNode: HTMLElement) => {
-          return triggerNode.parentNode
+          return triggerNode
         }"
       >
         <a-row class="h-full justify-center items-center">
@@ -56,6 +56,11 @@ const placement = "bottomCenter";
 .avatar-box {
   height: 32px;
   border-radius: 50%;
+}
+.ant-dropdown-trigger {
+  .ant-dropdown.ant-dropdown-placement-bottomCenter {
+    top: 58px !important;
+  }
 }
 .header {
   .header-left {
