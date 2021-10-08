@@ -6,7 +6,7 @@
         <span class="home-text">践知</span>
       </a-row>
     </a-col>
-    <a-col :span="2" :offset="14" class="header-right">
+    <a-col :span="1" :offset="15" class="header-right">
       <a-dropdown
         :placement="placement"
         :getPopupContainer="
@@ -14,10 +14,10 @@
           return triggerNode.parentNode
         }"
       >
-        <div>
+        <a-row class="h-full justify-center items-center">
           <img class="avatar-img" src="../assets/imgs/home.jpeg" alt="头像" />
           <DownOutlined />
-        </div>
+        </a-row>
 
         <template #overlay>
           <a-menu>
