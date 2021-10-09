@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import { createApp, App as InterfaceApp } from 'vue'
 import App from './App.vue'
 import store, { key } from './store/index'
 import router from './router/index'
@@ -11,10 +11,15 @@ import '@/assets/index.css'
 
 const app = createApp(App)
 
-// 引入富文本编辑器
-vMdEditor(app)
-app
-  .use(Antd)
-  .use(router)
-  .use(store, key)
-  .mount('#app')
+function bootstrap (app: InterfaceApp): InterfaceApp {
+  // 引入富文本编辑器
+  vMdEditor(app)
+  app
+    .use(Antd)
+    .use(router)
+    .use(store, key)
+    .mount('#app')
+  return app
+}
+
+bootstrap(app)
